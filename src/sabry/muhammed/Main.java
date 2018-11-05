@@ -23,6 +23,8 @@ public class Main {
         List<Token> tokens = Tokenizer.getExpressionTokenizer().tokenize(codeBuilder.toString());
         writeCompiledCode(tokens);
         System.out.println("For the output file, it's in the same folder as the program\nnamed scannedCode.txt");
+        System.out.println("Enter any key to exit");
+        scanner.nextLine();
     }
 
     private static void writeCompiledCode(List<Token> tokens) {
